@@ -1,0 +1,90 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../public/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  font-family: "Courier Prime", monospace;
+  text-align: center;
+  height: 1100px;
+}
+
+.circle_cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  overflow: hidden;
+  transition: 1s ease-in-out;
+}
+
+.circle_cont img {
+  width: 40px;
+}
+
+.circle {
+  position: absolute;
+  border: 1px solid;
+  border-radius: 100%;
+  width: 20px;
+  height: 20px;
+}
+
+.oval:hover, .circle_cont:hover {
+  filter: invert(1);
+}
+
+.oval:hover {
+  background-color: #fff;
+}
+
+.oval {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  border: 1px solid;
+  overflow: hidden;
+  border-radius: 50%;
+  width: 200px;
+  height: 100px;
+  transform: rotate(30deg);
+  transition: 1s ease-in-out;
+}
+
+body > .oval > img {
+  width: 100px;
+  transform: rotate(-30deg);
+}
+
+.text {
+  position: relative;
+  top: 170px;
+}
+
+p {
+  font-size: 64px;
+  text-align: center;
+  color: #000;
+  text-transform: uppercase;
+  max-width: 940px;
+  line-height: 60px;
+  font-weight: 100;
+  max-height: 274px;
+  background: rgba(255, 255, 255, .8);
+  filter: brightness(2);
+  border-radius: 0 100px;
+  padding-top: 10px;
+}
+
+a > img {
+  width: 400px;
+  padding: 0 50px;
+}
+
+a {
+  
+}
