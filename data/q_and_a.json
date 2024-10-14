@@ -1,0 +1,12 @@
+{
+  "questions": [
+    { "id": 1, "title": "Что такое гендерные стереотипы?" },
+    { "id": 2, "title": "Йендерные стереотипы?" }
+  ],
+  "answers": [
+    { "questionId": 1, "content": "Это такие штуки", "correct": true },
+    { "questionId": 1, "content": "Да ёмаё", "correct": false },
+    { "questionId": 1, "content": "Это что-то там", "correct": false },
+    { "questionId": 1, "content": "Это меня не волнует", "correct": false }
+  ]
+}
