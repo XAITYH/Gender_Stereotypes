@@ -21,35 +21,34 @@ export function Quiz() {
 
   function handle_yes() {
     set_yes_count(yes_count + 1);
-    if (n < questions.length) {
       set_n(n + 1);
-    }
   }
 
   function handle_no() {
     set_no_count(no_count + 1);
-    if (n < questions.length) {
       set_n(n + 1);
-    }
   }
 
   function handle_next() {
-    if (n < questions.length) {
       set_n(n + 1);
-    }
   }
 
+  if (yes_count !== 0 || no_count !== 0) {
   if (no_count > yes_count)
     set_result("У вас небольшое количество стереотипов! 👍");
 
-  if (no_count < yes_count) set_result("У вас много стереотипов! 😢");
+  else if (no_count < yes_count) set_result("У вас много стереотипов! 😢");
 
-  if (yes_count === no_count)
+  else if (yes_count === no_count)
     set_result("У вас среднее количество стереотипов! 👌");
 
-  if (yes_count === 0 && no_count > 0) set_result("У вас нет стереотипов! 😎");
+  else if (yes_count === 0 && no_count > 0) set_result("У вас нет стереотипов! 😎");
 
-  if (yes_count === 0 && no_count === 0) set_result("Вы пропустили все вопросы ✌")
+  else if (no_count === 0 && yes_count > 0) set_result("У вас определённо есть стереотипы! 👀")
+  
+  } else {
+    set_result("Вы пропустили все вопросы! ✌")
+  }
 
   if (n < questions.length) {
     return (
