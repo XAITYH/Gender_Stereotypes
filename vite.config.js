@@ -5,4 +5,12 @@ import preact from '@preact/preset-vite';
 export default defineConfig({
 	plugins: [preact()],
 	base: "/Genders_Stereotypes/",
+	build: {
+		rollupOptions: {
+			input: {
+				main: './index.html',
+				quiz: './quiz.html',
+			}
+		}
+	}
 });
