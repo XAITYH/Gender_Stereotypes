@@ -10,7 +10,8 @@
 		"deploy": "gh-pages -d dist"
 	},
 	"dependencies": {
-		"preact": "^10.22.1"
+		"preact": "^10.22.1",
+		"preact-router": "^4.1.2"
 	},
 	"devDependencies": {
 		"@preact/preset-vite": "^2.9.0",
