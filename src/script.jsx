@@ -47,9 +47,9 @@ export function Quiz() {
   if (yes_count === no_count)
     set_result("У вас среднее количество стереотипов! 👌");
 
-  if (yes_count === 0) set_result("У вас нет стереотипов! 😎");
+  if (yes_count === 0 && no_count !== 0) set_result("У вас нет стереотипов! 😎");
 
-  if (yes_count === 0 && no_count) set_result("Вы пропустили все вопросы ✌")
+  if (yes_count === 0 && no_count === 0) set_result("Вы пропустили все вопросы ✌")
 
   if (n < questions.length) {
     return (
