@@ -1,14 +1,6 @@
 import { hydrateRoot } from "preact/compat/client";
 import { useState } from "preact/hooks";
 import "../styles/style.css";
-import { Router } from "preact-router";
-
-    const Main = () => {
-        <Router>
-            <Home path='/'>
-            <Quiz path="/quiz" />
-        </Router>
-    }
 
 const questions = [
   "Женщины водят автомобиль хуже, чем мужчины?",
