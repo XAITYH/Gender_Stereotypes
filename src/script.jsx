@@ -34,10 +34,10 @@ export function Quiz() {
   }
 
   if (yes_count !== 0 || no_count !== 0) {
-  if (no_count > yes_count)
+  if ((no_count > yes_count) && yes_count !== 0)
     set_result("У вас небольшое количество стереотипов! 👍");
 
-  else if (no_count < yes_count) set_result("У вас много стереотипов! 😢");
+  else if ((no_count < yes_count) && no_count !== 0) set_result("У вас много стереотипов! 😢");
 
   else if (yes_count === no_count)
     set_result("У вас среднее количество стереотипов! 👌");
