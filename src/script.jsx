@@ -27,6 +27,7 @@ export function Quiz() {
   function handle_no() {
     set_no_count(no_count + 1);
       set_n(n + 1);
+      alert(no_count);
   }
 
   function handle_next() {
