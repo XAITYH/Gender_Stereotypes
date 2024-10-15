@@ -55,7 +55,7 @@ export function Quiz() {
     return (
       <>
         <div class="oval">
-          <img src="../public/star.png" alt="" />
+          <img src="star.png" alt="" />
         </div>
 
         <div class="question">
@@ -79,12 +79,12 @@ export function Quiz() {
         <div class="count">
           <div class="circle_cont">
             <div class="circle">{}</div>
-            <img src="../public/star.png" alt="" />
+            <img src="star.png" alt="" />
           </div>
           <div class="qtns_count">{n + 1}/8</div>
           <div class="circle_cont">
             <div class="circle">{}</div>
-            <img src="../public/star.png" alt="" />
+            <img src="star.png" alt="" />
           </div>
         </div>
       </>
