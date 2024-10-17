@@ -230,6 +230,22 @@ button:hover {
   .description {
     font-size: 50px;
   }
+
+  .next_question {
+    width: 60%;
+  }
+
+  .answ {
+    width: 40%;
+  }
+
+  .qtns_count {
+    width: 50%;
+  }
+  
+  .count {
+    position: static;
+  }
 }
 
 @media (max-width: 700px) {
@@ -237,7 +253,7 @@ button:hover {
     border-radius: 0 40px;
   }
 
-  .circle_cont {
+  #main .circle_cont {
     visibility: hidden;
   }
 }
