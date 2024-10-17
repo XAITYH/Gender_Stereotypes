@@ -256,10 +256,50 @@ button:hover {
   #main .circle_cont {
     visibility: hidden;
   }
+
+  .text {
+    top: 90px;
+  }
+
 }
 
 @media (max-width: 613px) {
   .description {
     max-height: 400px;
+  }
+}
+
+@media (max-width: 520px) {
+  .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .description {
+    font-size: 40px;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 422px) {
+  .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .description {
+    font-size: 30px;
+    font-weight: bold;
+    max-width: 300px;
+  }
+
+  .link_to_quiz > img {
+    width: 335px;
+  }
+
+  #quiz .oval {
+    position: static;
   }
 }
