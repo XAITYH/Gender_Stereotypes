@@ -93,7 +93,6 @@ button:hover {
   text-transform: uppercase;
   max-width: 940px;
   line-height: 60px;
-  font-weight: 100;
   max-height: 274px;
   background: rgba(255, 255, 255, .8);
   filter: brightness(2);
@@ -225,4 +224,26 @@ button:hover {
   align-items: center;
   font-weight: bold;
   letter-spacing: 2px;
+}
+
+@media (max-width: 870px) {
+  .description {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 700px) {
+  .description {
+    border-radius: 0 40px;
+  }
+
+  .circle_cont {
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 613px) {
+  .description {
+    max-height: 400px;
+  }
 }
